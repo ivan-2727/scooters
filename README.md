@@ -1,2 +1,2 @@
-# scooters
-Routing problem with approximate solution
+# Scooters
+The task (see pdf file) is to assign optimal routes to cars which deliver many electrical scooters across a city. There are constraints on maximum total capacity of a car (that is, how many scotters it can carry simultaneously) and the longest route. This problem is not exactly solvable in polynomial time even by means of dynamic programming, because it doesn't have the optimal substructure property. However, it turns out that due to the large variety of possible intermediate points, we can store just one possible path in each DP state to get a solution which is not exact but good enough. `DP[i][j]` is then a vector representing the path of a car which has delivered `i` scooters and has j` of them onboard. 
